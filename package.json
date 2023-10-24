@@ -1,0 +1,19 @@
+{
+  "name": "laundry",
+  "version": "1.0.0",
+  "description": "laundry web project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skidan007/laundry.git"
+  },
+  "author": "Daniel Victor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skidan007/laundry/issues"
+  },
+  "homepage": "https://github.com/skidan007/laundry#readme"
+}
