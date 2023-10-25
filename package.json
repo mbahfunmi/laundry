@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/skidan007/laundry/issues"
   },
-  "homepage": "https://github.com/skidan007/laundry#readme"
+  "homepage": "https://github.com/skidan007/laundry#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.2",
+    "font-awesome": "^4.7.0",
+    "fontawesome": "^5.6.3"
+  }
 }
