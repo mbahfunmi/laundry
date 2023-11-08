@@ -33,18 +33,17 @@
   </head>
   <body>
     <!-- Nav -->
-    <nav class="navbar navbar-expand-lg row-content sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
-            src="img/hod logo.png"
+            src="img/logo.png"
             alt="Hod Logo"
-            width="50"
-            height="50"
-            class="d-inline-block align-text-center"
+            width="150"
+            class="d-inline-block"
           />
-          hOd <span class="brand-text">CLEANERS</span>
         </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -57,19 +56,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav text-muted">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing and Plans</a>
+            <li class="nav-item text-muted">
+              <a class="nav-link" href="#">Pricing</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle text-muted"
                 href="#"
+                id="navbarDropdown"
                 role="button"
-                data-bs-toggle="dropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
                 aria-expanded="false"
               >
                 More Services
@@ -87,35 +88,77 @@
                 </li>
               </ul>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#">Contacts</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">About us</a>
+              <a class="nav-link">About us</a>
             </li>
           </ul>
+          <div class="nav-btn ml-5">
+            <button type="button" class="btn navbar-btn">ORDER</button>
+          </div>
         </div>
       </div>
     </nav>
 
     <!-- Header -->
     <header id="header">
-      <div class="overlay">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 col-md-6 header-content">
-              <h1>Dry-clean unlimited dirty items weekly</h1>
-              <hr />
-              <p>
-                Pay a monthly fixed amount and dry-clean unlimited clothes
-                weekly without worrying about costs of each item or multiple
-                visits to the
-              </p>
-              <button type="button" class="btn btn-primary">Order Now</button>
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide carousel-fade"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item item-1 active overlay">
+                <div class="col-12 col-md-6 header-text overlay-item">
+                  <h1>Dry Cleaning & Laundry To Your Door</h1>
+                  <hr class="header-hr" />
+                  <p>WE'LL DELIVER BACK TO YOU, ANYTIME AND ANYWHERE.</p>
+                  <button type="button" class="btn btn-primary">
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item item-2 overlay">
+                <div class="col-12 col-md-6 header-text overlay-item">
+                  <h1>Save Time for More Important Things</h1>
+                  <hr class="header-hr" />
+                  <p>WE'LL TAKE CARE ABOUT CLEANESS.</p>
+                  <button type="button" class="btn btn-primary">
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item item-3 overlay">
+                <div class="col-12 col-md-6 header-text overlay-item">
+                  <h1>Washing Clothes Was Never So Easy</h1>
+                  <hr class="header-hr" />
+                  <p>YOU DON'T NEED TONDO ANYTHING</p>
+                  <button type="button" class="btn">Order Now</button>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row"></div>
         </div>
       </div>
     </header>
@@ -127,13 +170,13 @@
           <p>DOWNLOAD THE APP</p>
         </div>
         <div class="col-6 col-lg-3">
-          <a type="button" class="btn btn-outline-light btn-sm">
+          <a type="button" class="btn btn1 btn-outline-light btn-sm">
             <i class="fa fa-apple fa-2x"></i>
             DOWNLOAD ON THE APP STORE
           </a>
         </div>
         <div class="col-6 col-lg-3">
-          <a type="button" class="btn btn-outline-light btn-sm">
+          <a type="button" class="btn btn1 btn-outline-light btn-sm">
             <i class="fa fa-play fa-2x"></i>
             DOWNLOAD ON THE PLAY STORE
           </a>
@@ -149,7 +192,7 @@
             <h2 class="pt-4">Delivering Clean Clothes and Peace of Mind</h2>
             <hr />
 
-            <p>REASONS TO CHOOSE US:</p>
+            <p class="blue-title">REASONS TO CHOOSE US:</p>
           </div>
 
           <div class="col-md-4 text-center">
@@ -216,9 +259,7 @@
         </div>
         <div class="row">
           <div class="col text-center">
-            <button type="button" class="btn btn-primary mt-5">
-              MORE ABOUT US
-            </button>
+            <button type="button" class="btn mt-5">MORE ABOUT US</button>
           </div>
         </div>
       </div>
@@ -281,11 +322,11 @@
           <div class="feature-title text-center">
             <h3>Clean Clothes Have Never Been This Easy!</h3>
             <hr />
-            <p>HOW OUR SERVICE WORKS:</p>
+            <p class="blue-title">HOW OUR SERVICE WORKS:</p>
           </div>
 
           <div class="col col-md-3 text-center">
-            <div class="card" style="width: 18rem">
+            <div class="card" style="width: 18rem card h-100">
               <i class="fa-light fa-mobile"></i>
               <span
                 class="card-img-top fa-thin fa-mobile-screen fa-lg fa-4x"
@@ -342,6 +383,242 @@
         </div>
       </div>
     </section>
+
+    <!-- our service -->
+    <section id="our-service">
+      <div class="container">
+        <div class="row row-content">
+          <div class="col-12 col-sm-6 service-img">
+            <img
+              src="img/our-service.jpg"
+              class="img-fluid"
+              alt="our sevice image"
+            />
+          </div>
+          <div class="col-12 col-sm-6 service-text">
+            <div class="service-text-content">
+              <h3>Shirt Service from N1000 per Shirt</h3>
+              <div class="service-btn-box">
+                <button type="button" class="btn btn2 btn-outline-light btn">
+                  FULL PRICE LIST
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pricing -->
+    <section id="pricing">
+      <div class="container">
+        <div class="h3-content text-center">
+          <h3>Dry Cleaning and Laundry Made Simple</h3>
+          <hr />
+          <p class="blue-title">HOW OUR SERVICE WORKS:</p>
+        </div>
+        <div class="row row-content">
+          <div class="col-6 col-md-4 text-center">
+            <div class="card h-100">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 blue-title">6 CLOTHES</h6>
+                <h5 class="card-title">Dry Cleaning / Launder & Press</h5>
+
+                <table class="table table-striped">
+                  <tbody>
+                    <tr>
+                      <td>Shirts – $2.50</td>
+                    </tr>
+                    <tr>
+                      <td>Pants – $7</td>
+                    </tr>
+                    <tr>
+                      <td>Blouses – $7</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h3>$9.00</h3>
+                <a href="#" class="btn">MORE DETAILS</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 text-center">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 blue-title">12 CLOTHES</h6>
+                <h5 class="card-title">Wash & Fold</h5>
+
+                <table class="table table-striped">
+                  <tbody>
+                    <tr>
+                      <td>Wash & Fold – $1.75 / lb.</td>
+                    </tr>
+                    <tr>
+                      <td>Comforters – $30</td>
+                    </tr>
+                    <tr>
+                      <td>Blnkets – $15</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h3>$19.00</h3>
+                <a href="#" class="btn btn-primary">MORE DETAILS</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 blue-title">20 CLOTHES</h6>
+                <h5 class="card-title">Hang Dry</h5>
+
+                <table class="table table-striped">
+                  <tbody>
+                    <tr>
+                      <td>Undergarments – $1</td>
+                    </tr>
+                    <tr>
+                      <td>Synthetics – $2.50</td>
+                    </tr>
+                    <tr>
+                      <td>Sweaters – $7</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h3>$29.00</h3>
+                <a href="#" class="btn">MORE DETAILS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-content">
+          <div class="col-12 col-md-6">
+            <div>
+              <h3>Don’t miss any action!</h3>
+              <p class="text-muted">
+                Sign up for our newsletter and keep up with our latest news.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <form class="form-inline">
+              <div class="form-group mx-sm-3 mb-2">
+                <label for="email" class="sr-only">Email</label>
+                <input
+                  type="email"
+                  class="form-control rounded-pill"
+                  id="email"
+                  placeholder="Your email address"
+                />
+              </div>
+              <button type="submit" class="btn mb-2">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row row-content">
+          <div class="col-12 col-md-3">
+            <a class="navbar-brand1" href="#">
+              <img
+                src="img/logo.png"
+                alt="Hod Logo"
+                width="150"
+                class="d-inline-block"
+              />
+            </a>
+            <p>
+              vimg Ipsa quae ab illo inventore veritatis et quasi architecto
+              beatae vitae dicta sunt explicabo. Ab illo inventore veritatis et
+              quasi architecto. Ipsa quae ab illo inventore veritatis et quasi
+              architecto beatae vitae dicta sunt explicabo.
+            </p>
+          </div>
+          <div class="col-12 col-md-3">
+            <h3>Blog Feed</h3>
+            <hr />
+            <div>
+              <h6><a class="text-muted" href="#">M3 E36 Cabrio</a></h6>
+              <p>JULY 7, 2016</p>
+              <h6>
+                <a class="text-muted" href="#">Ordering a rinse is easy!</a>
+              </h6>
+              <p>JUNE 21, 2016</p>
+              <h6>
+                <a class="text-muted" href="#"
+                  >Don't wait for cleaning until it's too late!
+                </a>
+              </h6>
+              <p>JULY 15, 2016</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <h3>Services</h3>
+            <hr />
+            <div class="service-content row">
+              <span class="service-arrow"
+                >>
+                <a class="text-muted" href="#">
+                  Dry Clean Your Winter Coat</a
+                ></span
+              >
+              <span class="service-arrow"
+                >> <a class="text-muted" href="#"> Dry Clean</a></span
+              >
+              <span class="service-arrow"
+                >> <a class="text-muted" href="#"> Ironing Services</a></span
+              >
+              <span class="service-arrow"
+                >> <a class="text-muted" href="#"> Laundry</a></span
+              >
+              <span class="service-arrow"
+                >> <a class="text-muted" href="#"> Wash & Fold</a></span
+              >
+              <span class="service-arrow"
+                >>
+                <a class="text-muted" href="#"> Laundry Service Lagos</a></span
+              >
+              <span class="service-arrow"
+                >> <a class="text-muted" href="#"> Laundry App</a></span
+              >
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <h3>Contact info</h3>
+            <hr />
+            <div class="contact-content">
+              <span class="fa fa-phone">
+                <a href="tel:+2347066557974">+234-706-655-7974</a>
+              </span>
+              <div class="address-box pt-5">
+                <p>123, New Lenox, Chicago IL 60606</p>
+                <a href="mailto:skidan007@gmail.com">skidan007@gmail.com</a>
+              </div>
+              <div class="socials pt-3">
+                <a
+                  class="text-muted"
+                  href="https://web.facebook.com/profile.php?id=100074835597233"
+                >
+                  <i class="fa fa-facebook"></i
+                ></a>
+                <a class="text-muted" href="#">
+                  <i class="fa fa-twitter"></i
+                ></a>
+                <a class="text-muted" href="#">
+                  <i class="fa fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="text-center">© 2023. All Rights Reserved.</p>
+    </footer>
 
     <!-- boot js -->
     <script
